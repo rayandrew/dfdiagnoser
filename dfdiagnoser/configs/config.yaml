@@ -3,7 +3,7 @@ defaults:
   # - hydra/job: dfdiagnoser
   # - hydra/help: dfdiagnoser
   - diagnoser: default
-  - input: checkpoint
+  - input: file
   - output: file
   - rule_defs/posix: all
   - _self_
