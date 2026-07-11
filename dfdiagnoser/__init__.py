@@ -8,11 +8,11 @@ from typing import List, Union
 
 from .config import init_hydra_config_store
 from .diagnoser import Diagnoser
-from .input import FileInput, MofkaInput
+from .input import FileInput, MofkaInput, ZMQInput
 from .output import ConsoleOutput, FileOutput
 from .utils.log_utils import configure_logging, log_block
 
-InputType = Union[FileInput, MofkaInput]
+InputType = Union[FileInput, MofkaInput, ZMQInput]
 OutputType = Union[ConsoleOutput, FileOutput]
 
 
@@ -122,6 +122,7 @@ __all__ = [
     "OutputType",
     "FileInput",
     "MofkaInput",
+    "ZMQInput",
     "ConsoleOutput",
     "FileOutput",
     "DFDiagnoserInstance",
